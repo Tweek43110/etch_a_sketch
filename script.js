@@ -1,9 +1,11 @@
 let container = document.getElementById('container');
+//Default grid size
+let j = 64;
 
 function createGrid() {
     let i = 0;
-    //Default grid size
-    let j = 64;
+
+ 
 
     function addDiv(){
         let newDiv = document.createElement('div');
@@ -52,12 +54,13 @@ function resetGrid() {
         document.getElementsByClassName('grid').remove();
     }
     
+    //Parameters for new grid
     if (newGrid < 10 || newGrid > 64) {
         newGrid = prompt("Please enter a value between 10 and 64");
     } else if (newGrid >= 10 || newGrid <= 64) {
-        console.log(newGrid);
-        let j = newGrid;
+        console.log(newGrid);       
         removeElements(); 
+        let j = newGrid;
         createGrid();   
     }
 }
