@@ -1,20 +1,29 @@
+#wrapper {
+    padding: 30px 50px 30px 50px;
+    background-color: #e82a09;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: auto;
+    width: 400px;
+}
+
 #container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid black;
-    height: auto;
-    width: 400px;
     margin: 0 auto;
-}
+    }
 
 .grid {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     align-content: center;
     text-align: center;
     transition: 0; 
+    background-color: #d1cfc8;
+    border: 1px solid black;
+
 }
 
 button {
@@ -22,5 +31,42 @@ button {
     padding: 15px 15px;
     margin: auto;
     margin-bottom: 15px;
-    text-align: center;  
+    text-align: center;
+    border: 1px solid #727375;
+    border-radius: 10px;  
+    background-color: #ffdd02;
+}
+
+.mockup {
+    display: flex;
+}
+.turn-right{
+    margin-right: auto;
+    margin-top: 15px;
+    padding: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: bisque;
+}
+
+.brand {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.brand p {
+    display: inline;
+    font-family: "Lobster", cursive;
+    color: #FFD700	;
+    font-size: 2em;
+
+}
+
+.turn-left {
+    margin-left: auto;
+    margin-top: 15px;
+    padding: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: bisque;
 }
